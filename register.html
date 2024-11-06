@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome/font/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <script async src="script.js"></script>
+    <title>utsdesainweb</title>
+</head>
+<body>
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color:rgb(4, 4, 167);">
+        <div class="container">
+          <a class="navbar-brand ms-auto" href="#foto/logo.png"style="color: white;"> <img src="foto/WhatsApp Image 2024-11-06 at 21.39.21.jpeg" width="50px" height="50px" alt="logo"> RS SIAGA MEDIKA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"style="color: white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"style="color: white;">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="service.html"style="color: white;">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html"style="color: white;">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="ourteam.html"style="color: white;">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html"style="color: white;">Register</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a style="color: white;"class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Poli
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="poliumum.html">POLI UMUM</a></li>
+                  <li><a class="dropdown-item" href="poligigi.html">POLI GIGI</a></li>
+                  <li><a class="dropdown-item" href="polianak.html">POLI ANAK</a></li>
+                  <li><a class="dropdown-item" href="polipenyakitdalam.html">POLI PENYAKIT DALAM</a></li>
+                  <li><a class="dropdown-item" href="polimata.html">POLI MATA</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="container visi" style="padding-top: 30px; padding-bottom: 50px; color:black; background-color: rgb(48, 101, 247)">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Nama Lengkap</label>
+            <input type="text" class="form-control" id="inputEmail4">
+            
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">NIK</label>
+            <input type="text" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Alamat</label>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Kode Pos</label>
+            <input type="number" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-6">
+            <label for="inputZip" class="form-label">No WhatsApp</label>
+            <input type="number" class="form-control" id="inputZip">
+          </div>
+          <div class="col-md-6">
+            <label for="inputZip" class="form-label">Tanggal Lahir</label>
+            <input type="date" class="form-control" id="inputZip">
+          </div>
+          <div class="col-md-12">
+            <label for="inputState" class="form-label">Jenis Kelamin :</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+              <label class="form-check-label" for="inlineRadio1">Laki-Laki</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+              <label class="form-check-label" for="inlineRadio2">Perempuan</label>
+            </div>
+          </div>
+        
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Agama</label>
+            <select id="inputState" class="form-select">
+              <option selected>Islam</option>
+              <option>Kristen</option>
+              <option>Buddha</option>
+              <option>Hindu</option>
+              <option>Katolik</option>
+              <option>Konghuchu</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Status Pasien</label>
+            <select id="inputState" class="form-select">
+                <option selected>Umum</option>
+                <option>BPJS/KIS</option>
+                </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">Pilih Poli</label>
+            <select id="inputState" class="form-select">
+              <option selected>Poli Umum</option>
+              <option>Poli Anak</option>
+              <option>Poli Gigi</option>
+              <option>Poli Penyakit Dalam</option>
+              <option>Poli Mata</option>
+              </select>
+          </div>
+          <div class="col-md-6">
+            <label for="inputZip" class="form-label">Pilih Tanggal Daftar</label>
+            <input type="date" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Keluhan</label>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit " class="btn btn-light">Kirim</button>
+          </div>
+        </form>
+      </section>
+
+
+ 
+      <section style="background-color:rgb(4, 4, 167);">
+      <div class="row ">
+        <div class="card m-auto border-0 ms-auto" style=" height: 150px; width: 150px ; background-color: white;">
+          <img src="foto/WhatsApp Image 2024-11-06 at 21.39.21.jpeg" class="card-img-top" alt="logo">
+      </div>
+      <div class="card mb-3 border-0" style="width: 25rem; background-color:rgb(4, 4, 167); color: aliceblue;">
+        <div class="card-body">
+          <h5 class="card-title">RS SIAGA MEDIKA</h5>
+          <div class="card-text">Jl. mawar No.27, Pamutih
+            Kec.Ulujami, Pemalang, 52371</div>
+          <div class="card-text">Email : remorver123@gmail.com</div>
+          <div class="card-text">Tlp/Wa : 083174348389</div>
+        </div>
+      </div>
+      <div class="card mb-3 border-0" style="width: 18rem; background-color:rgb(4, 4, 167); color: aliceblue;">
+        <div class="card-body">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.2141858695427!2d109.54826652410577!3d-6.864916867163823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fd9d213766aa5%3A0xf92f435d5eeb96cd!2sPamutih%20dokanjati!5e0!3m2!1sid!2sid!4v1730739337861!5m2!1sid!2sid" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+       </div>
+      </div>
+      <div class="card mb-3 border-0" style="width: 18rem; background-color:rgb(4, 4, 167); color: aliceblue;">
+        <div class="card-body">
+          <h5 class="card-title">Contact</h5>
+    
+          <div><a href="https://wa.me/6283174348389?text=Call emergency" style="text-decoration: none; color:white;" ><i class="fa-brands fa-whatsapp"></i> 083174348389</a></div>
+          <div> <a href="https://www.instagram.com/za.still_learning/profilecard/?igsh=bTRjdnBtZzZuczNq" style="text-decoration: none; color:white;"><i class="fa-brands fa-instagram">Za.still_learning</i></a></div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
